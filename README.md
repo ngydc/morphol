@@ -2,23 +2,14 @@
 Morphological Filters
  
 
+| Original image | Information |
+|:--:| :--: | 
+| ![](./images/building.jpg) | [900x700 image source](https://www.bostonmagazine.com/property/2019/02/12/boston-brutalism/?Property=) <br/> All following morphological operations used window size of 40x40 |
 
-| ![](./images/building.jpg) | 
-|:--:| 
-| *Original image* |
+| Dilation | Erosion|
+|:--:| :--: | 
+| ![](./images/building_dilated.jpg)  | ![](./images/building_eroded.jpg)|
 
-| ![](./images/building_dilated.jpg) | 
-|:--:| 
-| *Dilation* |
-
-| ![](./images/building_eroded.jpg) | 
-|:--:| 
-| *Erosion* |
-
-| ![](./images/building_opened.jpg) | 
-|:--:| 
-| *Opening* |
-
-| ![](./images/building_closed.jpg) | 
-|:--:| 
-| *Closing* |
+| Opening | Closing |
+|:--:| :--: | 
+| ![](./images/building_opened.jpg) | ![](./images/building_closed.jpg) |
