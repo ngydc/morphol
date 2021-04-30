@@ -10,6 +10,16 @@ def dilate(image, window):
     return _filter(image, window, 'dilation')
 
 
+def close(image, window):
+    dilated = dilate(image, window)
+    return erode(dilated, window)
+
+
+def open(image, window):
+    eroded = erode(image, window)
+    return dilate(eroded, window)
+
+
 def _filter(image, window, morph_type):
     m, n = image.shape
     pad = int(math.floor(window / 2))
