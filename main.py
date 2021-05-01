@@ -27,7 +27,7 @@ def main():
     opened_img.save(img_path.replace('.jpg', '_opened.jpg'), format='JPEG')
 
     """ morphological filters with random window sizes"""
-    """
+
     eroded_rand = morphol.erode_random(img_mat, 10, 20)
     eroded_img_rand = Image.fromarray(np.uint8(eroded_rand), 'L')
     eroded_img_rand.save(img_path.replace('.jpg', '_eroded_rand.jpg'), format='JPEG')
@@ -43,7 +43,6 @@ def main():
     closed_rand = morphol.close_random(img_mat, 10, 20)
     closed_img_rand = Image.fromarray(np.uint8(closed_rand), 'L')
     closed_img_rand.save(img_path.replace('.jpg', '_closed_rand.jpg'), format='JPEG')
-    """
 
 
 if __name__ == '__main__':
